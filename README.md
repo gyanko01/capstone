@@ -8,7 +8,7 @@ futures added, and milestones acheived throughout the development process.
 - ### Successes of the week
 - Submitted Weekly status report and created project proposal
 - ### Difficulties of the week
-- Drafting the proposal - focusing on one main straign objective.
+- Drafting the proposal - focusing on one main straight objective.
 - ### Goals for next week
 -  Review Public Date: Identify and gather relacant datasets that align with the project's main objective - fiannacial stgatements, market data, federal reserve aviaalble datasets and FDIC datasets
 -  Literature Review : Begin reviewing literature to understand current research and approaches related to the project objective

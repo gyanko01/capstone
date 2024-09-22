@@ -14,7 +14,7 @@ futures added, and milestones acheived throughout the development process.
   -  *Literature Review:* Begin reviewing literature to understand current research and approaches related to the project objective
   -  *Breakdown Project Components:* Define and outline the project's components, such as necessary data, policy implications, environment set up, actions and state determination
 
-    ## Week 2:
+  ## Week 2:
   - ### Fails of the week
   - None 
 - ### Successes of the week

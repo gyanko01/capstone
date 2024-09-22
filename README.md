@@ -21,7 +21,7 @@ futures added, and milestones acheived throughout the development process.
   - *Literature Review:* Selected a few articles discussing Reinforcement Learning in Finance and began reviewing them
     -   Reinforcement learning in financial markets - a survey Fischer, Thomas G
     -   A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem, Zhengyao Jiang, Dixing Xu, Jinjun Liang
-  - *Review Public Data:* Explored Board of Governors of the Federal Reserve System's Data website and starte examining the available datasets
+  - *Review Public Data:* Explored Board of Governors of the Federal Reserve System's Data website and started examining the available datasets
 - ### Difficulties of the week
   - Sorting through relevant  articles: There are numerous articles related to financial risk and machine learning techniques, making it challenging to determine how best to apply the avaialble data
 - ### Goals for next week

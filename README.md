@@ -27,4 +27,21 @@ futures added, and milestones acheived throughout the development process.
 - ### Goals for next week
 - *Continue with the letrature review and Fiancial data review:*
 - *Breakdown Project Components:* Define and outline the project's components, such as necessary data, policy implications, environment set up, actions and state determination
+
+## Week 3:
+- ### Fails of the week
+- None
+- ### Successes of the week
+- Had a productive discussion with Dr. Allen regarding the project proposal
+- Gained more clarity on the next steps, specifically focusing on :
+    - Acquiring the necessary data
+    - Creating a hypothesis
+    - Defining the main research question that my project aims to answer
+- ### Difficulties of the week
+- Encountered difficulties in locating the necessary datasets, sepcifically related to liquidity forecasting
+-  ### Goals for next week
+-  Continue exploring and analyzing the avaialable datasets
+-  Use insights from selected articles to refine hypothesis and further develop key research question for the project
+-  Start working on Requirement Specification 
+  
   

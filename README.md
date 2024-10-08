@@ -42,6 +42,28 @@ futures added, and milestones acheived throughout the development process.
 -  ### Goals for next week
 -  Continue exploring and analyzing the avaialable datasets
 -  Use insights from selected articles to refine hypothesis and further develop key research question for the project
--  Start working on Requirement Specification 
+-  Start working on Requirement Specification
+
+## Week 4:
+-Fails of the week
+- None 
+- ### Successes of the week
+- Added one more article to my literature review which helped with formation of some of the research questions and gives better direction of what data to use
+  - An Artiﬁcial Neural Network and Bayesian Network model for liquidity risk assessment in banking - Madjid Tavana, Amir-Reza Abtahi , Debora Di Capro , Maryam Poortarigh
+- Explored and identified below datasets from FRED website:
+  -  Total Assets, All Commercial Banks - weekly from 2014-09-25 to 2024-09-25
+  -  Deposits, All Commercial Banks - weekly from 2014-09-25 to 2024-09-25
+  -  Cash Assets, All Commercial Banks - weekly from 2014-09-25 to 2024-09-25
+- Defined research questions:
+- What are key factors affecting liquidity in banks and how can the RLHF agent compute their occurence probabilities to improve liquidity management?
+- How can human feedback be used to imporve the decision making process  of the RL agent?
+- How can the RL agent learn the trade-offs between different asset classes and liability management to maintain optimal liquidity levels?
+- How can the RLHF agent be used to improve dynamic stress testing for liquidity crises?
+- ### Difficulties of the week
+- Finding suitable proxy datassets that can serve as a close representation of the actual datasets has proven to be more complex than anticipated
+- ### Goals for next week
+- Working on Requirement Specficiation
+- Downloading the datasets, organizing the data into structured format and ensure consistency in the data formatting of the datasets
+  
   
   

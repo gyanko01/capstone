@@ -66,7 +66,7 @@ futures added, and milestones acheived throughout the development process.
 - Downloading the datasets, organizing the data into structured format and ensure consistency in the data formatting of the datasets
 
 ## Week 5:
--Fails of the week
+- Fails of the week
 - None
 - ### Successes of the week
 - Explored Yahoo finance dataset

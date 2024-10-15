@@ -64,6 +64,21 @@ futures added, and milestones acheived throughout the development process.
 - ### Goals for next week
 - Working on Requirement Specficiation
 - Downloading the datasets, organizing the data into structured format and ensure consistency in the data formatting of the datasets
+
+## Week 5:
+-Fails of the week
+- None
+- ### Successes of the week
+- Explored Yahoo finance dataset
+- Worked on formulating questions and finding ways of how to show the improvements that human feedback would bring to the model
+- Started the Requirements Specification powerpoint presentation
+- ### Difficulties of the week
+  - Organizing all the datasets
+  - Engineering Graph for the Requirements Specification Document
+- ### Goals for next week
+- Finish the Requirements Specification Presentation and Present it
+- Focus on cleaning the datasets and loading them into pandas.
+- Begin inspecting the data, converting it to the appropriate units and preparing it for further analysis 
   
   
   

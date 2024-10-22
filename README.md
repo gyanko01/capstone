@@ -80,5 +80,15 @@ futures added, and milestones acheived throughout the development process.
 - Focus on cleaning the datasets and loading them into pandas.
 - Begin inspecting the data, converting it to the appropriate units and preparing it for further analysis 
   
-  
+  ## Week 6:
+  -Fails of the week
+  -None
+  -### Successes of the week
+  - Requirements presentation is done
+  - Data files are downloaded and saved for further processing
+  - ### Difficulties of the week
+  - Formatting of the data files and finding datasets within the same timeframe
+  - ### Goals for next week
+  - Data processing, cleaning and normalizing
+  - Start working on the environment set up
   

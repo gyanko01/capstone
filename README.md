@@ -91,4 +91,17 @@ futures added, and milestones acheived throughout the development process.
 - ### Goals for next week
   - Data processing, cleaning and normalizing
   - Start working on the environment set up
-  
+## Week 7:
+- Fails of the week
+- None
+- ### Successes of the week
+- Completed data mapping document covering all the study data
+- Reviewed the assets and liabilities composities, which will be used to calculate the current ratio, the main indicator of liquidity
+- Organized the time series data into a table with 6 columns detailing the date range, attribute, data type, units, frequencies, information, source, and mapping/notes.This format is a more convenient way to set up environment.
+- ### Difficulties of the week
+-  Working with asset and liability composites to define actions for the agent has been challenging, especially in mapping each indicator that will impact the agent's decisions
+-  Mapping relevant actions precisely to each indicator influencing the agent's behavior is requiring careful planning
+-    ### Goals for next week
+-    Continue working on the mappings anf prepare all data
+-    Load, inspect, normalize and standardize the data
+-    Begin drafting the design document 

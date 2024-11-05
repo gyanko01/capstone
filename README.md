@@ -106,7 +106,7 @@ futures added, and milestones acheived throughout the development process.
 -    Load, inspect, normalize and standardize the data
 -    Begin drafting the design document
 ## Week 8:
--Fails of the week
+- Fails of the week
 - None
 - ### Successes of the week
 - Environment data is set up for loading and processing

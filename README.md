@@ -104,4 +104,18 @@ futures added, and milestones acheived throughout the development process.
 -    ### Goals for next week
 -    Continue working on the mappings anf prepare all data
 -    Load, inspect, normalize and standardize the data
--    Begin drafting the design document 
+-    Begin drafting the design document
+## Week 8:
+-Fails of the week
+- None
+- ### Successes of the week
+- Environment data is set up for loading and processing
+- Explored Gymnasium website to gather more information about creating custom environmnets
+-  ### Difficulties of the week
+-  Sorting out the data in one time series as there are weekly and daily data
+-  Configuring moving averages to gather a broader picture of the trends
+-  ### Goals for the next week
+-  Start with the code and continue exploring Gym environment
+-  Continue working on the design document
+-  Goals is to have the Competency Demo on November 19 and design document on Dec 3rd
+  

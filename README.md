@@ -120,7 +120,7 @@ futures added, and milestones acheived throughout the development process.
 -  Goals is to have the Competency Demo on November 19 and design document on Dec 3rd
 
   ## Week 9:
-  -Fails of the week
+  - Fails of the week
   -None
   - ### Successes of the week
   - Features Data is loaded and validated
@@ -145,24 +145,24 @@ futures added, and milestones acheived throughout the development process.
   -  Working with the features data and determining actions
   - ### Goals for the next week
   - Prepare Competency Demo
-  - Work on the new Data Soruce, determine ways to download and inspect the data
+  - Work on the new Data Source, determine ways to download and inspect the data
   - Work on design document, formulating hypothesis
     
 ## Week 11:
 - Fails of the week
-- My calculations on the new datasets are failing due to encoding issues, as the column names in the datasets are either not being recognized or misinterpreted. This is likely caused by inconsistencies in the character encoding of the files, which prevents proper alignment of column headers with the expected schema during processing.You might also want to specify if there's a mismatch in encoding (e.g., UTF-8 vs. another standard) to provide more context for troubleshooting.
-- ### Successes ow the week
+- My calculations on the new datasets are failing due to encoding issues, as the column names in the datasets are either not being recognized or misinterpreted. This is likely caused by inconsistencies in the character encoding of the files, which prevents proper alignment of column headers with the expected schema during processing. Mismatch in encoding ( UTF-8 vs. mixed data types)
+- ### Successes of the week
 - New dataset script worked very well for downloading and saving the data
 - Other features datasets are validated and the data is mostly cleaned with no missing values
 - Completing Competency Demo
 - ### Difficulties of the week
-- Encoding with the dataset and files
-- Misalignment in the data frequecy ( daily vs. quarterly) and finding ways to handle it
-- Raw data for the current ratio very sporading , skewed
+- Encoding issues
+- Misalignment in the data frequency ( daily vs. quarterly) and finding ways to handle it
+- Raw data for the current ratio very sporading, with outliers, skewed
 - ### Goals for the next week
 - Normalize, standardize the datasets
 - Fix the encoding issues and add the missing data
-- WOrk on time series alignment
+- Work on time series alignment
 - Work on design document 
 
   

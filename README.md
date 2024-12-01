@@ -170,7 +170,7 @@ futures added, and milestones acheived throughout the development process.
 - Interpolation of quarterly data to daily data for assets and liabilities 
 - ### Successes of the week 
 - Found more Asset Liability Management Reinforcement Learning articles for reference
-- Created mappings susccessfully of all the  seets and liabilities columns included in the dataframe
+- Created mappings susccessfully of all the  asets and liabilities columns included in the dataframe
 - Narrowed the dataset with limited number of institutions to match the 2052 Liquidity daily reporting requirements,i.e. indicating which institutions should submit the liquidity report daily
 - Successflully created stasts dataFrame with Coefficient Variance and heurustic to determine the type of the interpolation to daily time series based on the  CV Categorization
 - Redownloaded 2014 data files and was able to include them in the raw dataframe

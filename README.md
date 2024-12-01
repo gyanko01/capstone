@@ -163,6 +163,25 @@ futures added, and milestones acheived throughout the development process.
 - Normalize, standardize the datasets
 - Fix the encoding issues and add the missing data
 - Work on time series alignment
-- Work on design document 
+- Work on design document
+
+## Week 12:
+-Fails of the week
+-Interpolation of quarterly data to daily data for assets and liabilities 
+-### Successes of the week 
+- Found more Asset Liability Management Reinforcement Learning articles for reference
+- Created mappings susccessfully of all the  seets and liabilities columns included in the dataframe
+- Narrowed the dataset with limited number of institutions to match the 2052 Liquidity daily reporting requirements,i.e. indicating which institutions should submit the liquidity report daily
+- Successflully created stasts dataFrame with Coefficient Variance and heurustic to determine the type of the interpolation to daily time series based on the  CV Categorization
+- Redownloaded 2014 data files and was able to include them in the raw dataframe
+- ### Difficulties of the week
+- Interpolation to Daily Buisiness Day from quarterly
+- How to handle multiple rows with the same quarterly date to extend to daily , need carefully to select groupping sorting of the dataset
+- Determine ways to interpolate - linear, spline, logarithmic
+- ### Goals for the next week
+- Get the daily time series dataset for assets and liabilities working
+- Merge the above dataframe with the other market and economic indicators datasets
+- Work on the merged dataset to identify action set and reward functions
+- Desing document
 
   

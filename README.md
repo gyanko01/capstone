@@ -166,9 +166,9 @@ futures added, and milestones acheived throughout the development process.
 - Work on design document
 
 ## Week 12:
--Fails of the week
--Interpolation of quarterly data to daily data for assets and liabilities 
--### Successes of the week 
+- Fails of the week
+- Interpolation of quarterly data to daily data for assets and liabilities 
+- ### Successes of the week 
 - Found more Asset Liability Management Reinforcement Learning articles for reference
 - Created mappings susccessfully of all the  seets and liabilities columns included in the dataframe
 - Narrowed the dataset with limited number of institutions to match the 2052 Liquidity daily reporting requirements,i.e. indicating which institutions should submit the liquidity report daily

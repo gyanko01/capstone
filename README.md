@@ -197,7 +197,7 @@ futures added, and milestones acheived throughout the development process.
 - The liquidity data is very unstable, current assets cover only 31% of current liabilities, very low values
 - Designing a reward function - in process
 - ### Goals for the next week
-- Reward functions andaction sets
+- Reward functions and action sets
 - Design document
 
   

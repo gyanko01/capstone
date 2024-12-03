@@ -185,3 +185,19 @@ futures added, and milestones acheived throughout the development process.
 - Desing document
 
   
+## Week 13:
+- Fails of the week
+- None
+- ### Successes of the week 
+- Interpolated the qurterly data into daily and maerged wih the market data
+- DataFrame is complete for next steps in RLHF
+- Completed Demo Notebook
+- ### Difficulties of the week
+- Interpolation to Daily Buisiness Day from quarterly using scaled weight and Coefficient of Variance
+- The liquidity data is very unstable, current assets cover only 31% of current liabilities, very low values
+- Designing a reward function - in process
+- ### Goals for the next week
+- Reward functions andaction sets
+- Design document
+
+  

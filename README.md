@@ -200,4 +200,110 @@ futures added, and milestones acheived throughout the development process.
 - Reward functions and action sets
 - Design document
 
+  ## Week 14: Week of Dec. 4
+- Fails of the week
+- None
+- ### Successes of the week 
+- Reviewed the baalnce sheet data and included more asset variables to the Current Assets feature
+- ### Difficulties of the week
+- Figuring out which Balance sheet variables will be counted toward Current Assets
+- Literature Review organization for Design paper
+- ### Goals for the next week
+- Use the new developed Current Assets data and redo the Inputs dataset representing an input for the environment
+- Design document - Introduction and Literature Review
+
+  ## Week 15: Week of Dec. 11
+- Fails of the week
+- None
+- ### Successes of the week 
+- Completed Introduction Section of the Design Document
+- New dataset is saved to csv file
+- New dictionary is set up with all the variables and definitions for each variable of Current Assets and Current Liabilities
+- ### Difficulties of the week
+- Design document preparation - structure, sections, literature review
+- Literature Review organization for Design paper
+- ### Goals for the next week
+- Review articles and highlight the most important part
+- Continue with Design Literature
+
+   ## Week 16: Week of Dec. 18
+- Fails of the week
+- None
+- ### Successes of the week 
+- REviewed the technical articles for RL and RL in finance
+- Drafted the first 2 sections of Literature review for the design document 
+- ### Difficulties of the week
+- Relating the articles to the RLHF design
+- ### Goals for the next week
+- Complete Literature Review
+
+ ## Week 17: Week of Dec. 25
+- Fails of the week
+- None
+- ### Successes of the week 
+- Completed Literature Review
+- ### Difficulties of the week
+- Relating the articles to the RLHF design
+- ### Goals for the next week
+- Formulating Hypothesis 
+
+## Week 18: Week of Jan. 1
+- Fails of the week
+- None
+- ### Successes of the week 
+- Completed Hypothesis 
+- ### Difficulties of the week
+- Designing the state space for Qlearning model - discretizing the states to get finite state space
+- Formulating Action space to be able to use the market and balance sheet data 
+- ### Goals for the next week
+- Action Space
+- Reward Function
+
+  ## Week 19: Week of Jan. 8
+- Fails of the week
+- Reward for Qlearning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
+- ### Successes of the week 
+- Action Space is formulated
+- Cost of the actins for PPO is set up on high level
+- Refining the PPO cost calculation to use in Qlearning  
+- ### Difficulties of the week
+- Reward construction for 
+- Formulating Action space to be able to use the market and balance sheet data 
+- ### Goals for the next week
+- Action Space
+- Complete Q-learning  and PPO reward function
+- Simulate actions to test the reward calculation
+- Design document
+
+  ## Week 20: Week of Jan. 15
+- Fails of the week
+- Reward for Qlearning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
+- ### Successes of the week
+- Achieved promising preliminary calculations using correlation coefficients to approximate the adjustment to current_ratio.
+- Incorporated correlation-based logic into the calculation of the new current_ratio
+- Finalized the shared layered architecture for the actor-critic network, clearly distingushing shared inputs and separate outputs
+- Completed the reward construction for PPO, including integration of human feedback , amrket indicators, permormance ratio and balance sheet data
+- Created a diagram for PPO design to visually represent the architecture and flow of the shared layer and netwrok outputs
+- Reward Construction for PPO is complete  
+- ### Difficulties of the week
+- Evaluation metrics - need to better align metrics with the project hypotheses, particularly around human feedback improving decision-making
+- Finding appropriate ways to measure the agent's efficiency and accuracy in achieving solvency and cost minimization
+- ### Goals for the next week
+- Complete the design document - articulate the finalized reward function for Q-learning
+- Ensured the PPO design includes justification for shared and separate network layers
+- Develop evaluation metrics
+
+  ## Week 21: Week of Jan. 22
+- Fails of the week
+- NONE
+- ### Successes of the week
+- Q-learning and PPO architectures
+- Reward construction and evaluation metrics
+- Completed the design document
+- ### Difficulties of the week
+- Faced challenges in developing designs that are still proposals for experimentation
+- Uncertainty about how well the simulated logic and reward mechanisms will align with the agent's actual learning outcomes in practice
+- ### Goals for the next week
+- Review Gym documentation and explore initialization of the environment for the agent
+- Verify data completeness
   

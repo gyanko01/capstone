@@ -204,7 +204,7 @@ futures added, and milestones acheived throughout the development process.
 - Fails of the week
 - None
 - ### Successes of the week 
-- Reviewed the baalnce sheet data and included more asset variables to the Current Assets feature
+- Reviewed the balance sheet data and included more asset variables to the Current Asset feature
 - ### Difficulties of the week
 - Figuring out which Balance sheet variables will be counted toward Current Assets
 - Literature Review organization for Design paper
@@ -223,14 +223,14 @@ futures added, and milestones acheived throughout the development process.
 - Design document preparation - structure, sections, literature review
 - Literature Review organization for Design paper
 - ### Goals for the next week
-- Review articles and highlight the most important part
+- Review articles and highlight the most important parts
 - Continue with Design Literature
 
    ## Week 16: Week of Dec. 18
 - Fails of the week
 - None
 - ### Successes of the week 
-- REviewed the technical articles for RL and RL in finance
+- Reviewed the technical articles for RL and RL in finance
 - Drafted the first 2 sections of Literature review for the design document 
 - ### Difficulties of the week
 - Relating the articles to the RLHF design
@@ -245,15 +245,15 @@ futures added, and milestones acheived throughout the development process.
 - ### Difficulties of the week
 - Relating the articles to the RLHF design
 - ### Goals for the next week
-- Formulating Hypothesis 
+- Formulating Hypotheses 
 
 ## Week 18: Week of Jan. 1
 - Fails of the week
 - None
 - ### Successes of the week 
-- Completed Hypothesis 
+- Completed Hypotheses 
 - ### Difficulties of the week
-- Designing the state space for Qlearning model - discretizing the states to get finite state space
+- Designing the state space for Q-learning model - discretizing the states to get finite state space
 - Formulating Action space to be able to use the market and balance sheet data 
 - ### Goals for the next week
 - Action Space
@@ -261,28 +261,28 @@ futures added, and milestones acheived throughout the development process.
 
   ## Week 19: Week of Jan. 8
 - Fails of the week
-- Reward for Qlearning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
+- Reward for Q-learning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
 - ### Successes of the week 
 - Action Space is formulated
-- Cost of the actins for PPO is set up on high level
-- Refining the PPO cost calculation to use in Qlearning  
+- Cost of the actions for PPO is set up on high level
+- Refining the PPO cost calculation to use in Q-learning  
 - ### Difficulties of the week
-- Reward construction for 
+- Reward construction for PPO and Q-learning
 - Formulating Action space to be able to use the market and balance sheet data 
 - ### Goals for the next week
 - Action Space
-- Complete Q-learning  and PPO reward function
+- Complete Q-learning  and PPO reward functions
 - Simulate actions to test the reward calculation
 - Design document
 
   ## Week 20: Week of Jan. 15
 - Fails of the week
-- Reward for Qlearning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
+- Reward for Q-learning -need to develop a clear representation for the gap to current ratio to 1, particualrly when the shortage values are not explicitly included in the state space
 - ### Successes of the week
 - Achieved promising preliminary calculations using correlation coefficients to approximate the adjustment to current_ratio.
 - Incorporated correlation-based logic into the calculation of the new current_ratio
 - Finalized the shared layered architecture for the actor-critic network, clearly distingushing shared inputs and separate outputs
-- Completed the reward construction for PPO, including integration of human feedback , amrket indicators, permormance ratio and balance sheet data
+- Completed the reward construction for PPO, including integration of human feedback , market indicators, permormance ratio and balance sheet data
 - Created a diagram for PPO design to visually represent the architecture and flow of the shared layer and netwrok outputs
 - Reward Construction for PPO is complete  
 - ### Difficulties of the week

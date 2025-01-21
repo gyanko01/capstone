@@ -261,7 +261,7 @@ futures added, and milestones acheived throughout the development process.
 
   ## Week 19: Week of Jan. 8
 - Fails of the week
-- Reward for Q-learning - need to come up with logic how to represent the gap of the $current_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
+- Reward for Q-learning - need to come up with logic how to represent the gap of the $current\_ratio$ to 1.The state space is not including the shortage values, so need to find a way of calculating the new current_ratio
 - ### Successes of the week 
 - Action Space is formulated
 - Cost of the actions for PPO is set up on high level

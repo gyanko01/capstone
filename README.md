@@ -307,3 +307,49 @@ futures added, and milestones acheived throughout the development process.
 - Review Gym documentation and explore initialization of the environment for the agent
 - Verify data completeness
   
+## Week 20: Week of Jan. 15
+- Fails of the week
+- Reward for Q-learning -need to develop a clear representation for the gap to current ratio to 1, particualrly when the shortage values are not explicitly included in the state space
+- ### Successes of the week
+- Achieved promising preliminary calculations using correlation coefficients to approximate the adjustment to current_ratio.
+- Incorporated correlation-based logic into the calculation of the new current_ratio
+- Finalized the shared layered architecture for the actor-critic network, clearly distingushing shared inputs and separate outputs
+- Completed the reward construction for PPO, including integration of human feedback , market indicators, permormance ratio and balance sheet data
+- Created a diagram for PPO design to visually represent the architecture and flow of the shared layer and netwrok outputs
+- Reward Construction for PPO is complete  
+- ### Difficulties of the week
+- Evaluation metrics - need to better align metrics with the project hypotheses, particularly around human feedback improving decision-making
+- Finding appropriate ways to measure the agent's efficiency and accuracy in achieving solvency and cost minimization
+- ### Goals for the next week
+- Complete the design document - articulate the finalized reward function for Q-learning
+- Ensured the PPO design includes justification for shared and separate network layers
+- Develop evaluation metrics
+
+  ## Week 22: Week of Jan. 22
+- Fails of the week
+- NONE
+- ### Successes of the week
+- Design paper completed
+- Evaluation metrics reviewed and included PPO design
+- Initial Q-learning framework set up with binned data
+- ### Difficulties of the week
+- Reward construction - how to incorporate and account for all the different scenarios
+- Q-learning and binned data - ensuring appropriate state-action representations
+- Uncertainty about how well the simulated logic and reward mechanisms will align with the agent's actual learning outcomes in practice
+- ### Goals for the next week
+- Review Gym documentation and explore initialization of the environment for the agent
+- Verify data completeness and refine prepocessing steps
+
+    ## Week 22: Week of Jan. 29
+- Fails of the week
+- NONE
+- ### Successes of the week
+- Environment setup completed using custom classes and code from scratch
+- Encoded the data each row has "state_id"
+- Evaluation metrics reviewed and included PPO design
+- Initial Q-learning framework set up with binned data
+- ### Difficulties of the week
+  -Data preprocessing - ensuring that each row is enoded and the duplicated "state_ids" correspond to the same binned data
+  - Setting up the reward function 
+- ### Goals for the next week
+- Complete code and train the agent

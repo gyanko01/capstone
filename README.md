@@ -325,7 +325,7 @@ futures added, and milestones acheived throughout the development process.
 - Ensured the PPO design includes justification for shared and separate network layers
 - Develop evaluation metrics
 
-  ## Week 22: Week of Jan. 22
+  ## Week 21: Week of Jan. 22
 - Fails of the week
 - NONE
 - ### Successes of the week
@@ -353,3 +353,88 @@ futures added, and milestones acheived throughout the development process.
   - Setting up the reward function 
 - ### Goals for the next week
 - Complete code and train the agent
+
+    ## Week 23: Week of Feb. 5
+- Fails of the week
+- Reward function Set up - the reward function is not producing the results as expected(taking an action and increasing the current_ratio is not consistent, as in some steps the reward is negative although the next_current_ratio was improved)
+- ### Successes of the week
+- Environment setup completed using custom classes and code from scratch( class Environment and all the environmnet methods( reset, _get_state,calculate_reward, take_action,step)
+- Encoded the data each row has "state_id"
+- Initial Q-learning framework set up with binned data
+- ### Difficulties of the week
+  - Setting up the reward function
+      - The reward function as part of the Environment includes methods:
+          - _calculate_cost - using the market data , the function computes the cost for each action and also filters 'T10Y2Y' when negative and investment actions - (this represents non-favorable market condition for investment, so the variable 'T10Y2Y' in these conditions is ignored)
+          - calcualte_reward - set up as:
+              1) Closing the gap to current_ratio = 1 abs( 1 - old_gap ) - abs(1 - new_gap), where old_gap = 1 - current_ratio, new_gap = 1 - new_current_ratio
+              2) Selecting the least costly action for current_ratio < 1 and using -cost in the reward function
+              3) Rranking = 1 for selecting the least costly action and 1 for the best investment
+              4) Reward 'Do Nothing ' only in volatile conditions when current_ratio > 1 ( Rmaket)
+              5) Rtotal = Rgap - Rcost + Rranking + Rmarket 
+- ### Goals for the next week
+- class Qlearning Train and set up the trian with 30 day window trianing steps per episode 
+- Figure out the adjustment for calculating the new_current_ratio for each of the current_ratio bins
+- Reward function construction
+    1) When current_ratio  < 1, Rgap should be rewarding for improving the jump ( if gap increase from 0.1 to 0.3 for current_ratio from 0.6 to 0.9 should be rewarded at the same rate, instead of moving just 0.1 for example)
+    2) - Rcost  is producing negative values , which are not consistent with the agent goal
+    3) Investment Opportunities Reward
+    4)  Inverse Treasury yield curve - do not invest
+    5)   Reward goal is to be encouraging actions when current_ratio < 1 to close the gap and when the current_ratio > 1 to have the highest ovehaul above 1 and at the same time selecting the least costly action for current_ratio < 1 and the best investment action when current_ratio > 1 ( select the action which produces the highest  new_current_ratio over 1)
+- Training window and setting up the QlearningLiquidityTrainer class 
+- Keep trainig the agent and review the training logs
+- Produce plots for steps per episode, epsilon decay, state visit count and total reward
+
+   ## Week 24: Week of Feb. 12
+- Fails of the week
+- Dataset is not covering all the possible states- qtable is producing a lot of 0 values because of not all states being present in the dataset
+- Mostly selected action is  # 5  and # 7
+- The transition to another state is not working , agent taking flat steps per episode 
+- Agent is not visiting all the states
+- ### Successes of the week
+- Initial structure of the custom Qlearning environmnet, trainer , instantiation , plots are set up
+- MinMax scaler values added to the dataset for each market variable and used in the calculate_cost method
+- Created synthetic rows of data to represent the missing state_id combinations
+- Lowered the state space to 2 * 3 ** 5 = 486 from 972 ( current_ratio_bin from 4 to 2 as there was a lot of redundancy of bins 0 - 2, bins now are current_ratio_bin 0  < 1 and current_ratio_bin 1 > 1 (investment opportunities)
+- Introduced OLS coefficients  in the init  QlearningEnvironment. The dependent variable is change in current_ratio and the betas are each individual market variable. How each market variable is influencing the change in the current_ratio. The coefficients are used in predict_mext_ratio method, while the weights are used in _calculate_cost method with the scaled  values of the market variables.
+- ### Difficulties of the week
+- Claculating the next_current_ratio - the adjustment factor is influencing the next_current_ratio but the movements are too small
+- Cannot understand -cost penalty as it is not guiding the agent in selecting the right action
+- Trianing is not fluctuating the steps withing the episode and not all the states are visited
+- ### Goals for the next week
+- Method next_current_ratio - test and tune in the adjustment factor with conditions based on the current_ratio value and try incorporating the market_value of the variable when adjusting to get the new_raito in a way to produce movements to get the new_ratio to 1
+- Exclude the -cost calculation and only keep the Rranking
+- Work on the training and the transitioning to the next state , ensure that each step is done until the agent make the best possible action and bring the new_current_ratio as close to 1 as possible or further away form 1 for current_ratio > 1. Consider changing the 30day window step per episode
+- Make sure the agent is visiting all the states in the dataset
+
+
+   ## Week 25: Week of Feb. 19
+- Fails of the week
+- Adjustment is too small and have hard time getting as close to 1 as possible
+- Keep selecting actions is  # 5  and # 7
+- Reward function is not working as expected
+- ### Successes of the week
+- Transitions are working better now- removed the 30day window steps
+- Debugged trian function , called in the reset method
+- Epsilon greedy action selection introduced condition state_visit_tracker [state] < 2 to encourage exploring and visiting more states of the dataset
+- Randomly moving through the dataset and selecting new states
+- Reward change with Rranking and Ragap excluding the -cost is more visible as better understanding that the improvement of new_current_ratio plus Rranking = 1 for least costly action or best investment action is encouraging agent to act as expected
+- ### Difficulties of the week
+- Tunning the reward
+- Penalties for Rranking , Rmarket 
+- ### Goals for the next week
+- Reward structure review Ragap , Rranking and penalties
+- Make sure Rmarket is correct and how it is fitting with the reward function
+- Working on the adjustment - encourage greater movements
+
+  ## Week 26: Week of Feb. 26 (Reward and Adjustment goals)
+- Fails of the week
+
+- ### Successes of the week
+
+- ### Difficulties of the week
+
+- ### Goals for the next week
+- Flag states for human evaluator and incorporating the mechanism for human feedback 
+
+
+

@@ -386,7 +386,7 @@ futures added, and milestones acheived throughout the development process.
 
    ## Week 24: Week of Feb. 12
 - Fails of the week
-- Dataset is not covering all the possible states- qtable is producing a lot of 0 values because of not all states being present in the dataset
+- Dataset is not covering all the possible states- qtable is producing a lot of 0 values because of missing states in the dataset
 - Mostly selected action is  # 5  and # 7
 - The transition to another state is not working , agent taking flat steps per episode 
 - Agent is not visiting all the states
@@ -417,12 +417,14 @@ futures added, and milestones acheived throughout the development process.
 - Debugged trian function , called in the reset method
 - Epsilon greedy action selection introduced condition state_visit_tracker [state] < 2 to encourage exploring and visiting more states of the dataset
 - Randomly moving through the dataset and selecting new states
-- Reward change with Rranking and Ragap excluding the -cost is more visible as better understanding that the improvement of new_current_ratio plus Rranking = 1 for least costly action or best investment action is encouraging agent to act as expected
+- Reward change with Rranking and Rgap excluding the -cost is more visible as better understanding that the improvement of new_current_ratio plus Rranking = 1 for least costly action or best investment action is encouraging agent to act as expected
 - ### Difficulties of the week
 - Tunning the reward
-- Penalties for Rranking , Rmarket 
+- Penalties for Rranking , Rmarket
+- New Rtotal = Rgap + Raranking + Rmarket
 - ### Goals for the next week
-- Reward structure review Ragap , Rranking and penalties
+- Reward structure review Rgap , Rranking and penalties
+- Introduce Rexplore to encourage the agent to cover all the states in the dataset 
 - Make sure Rmarket is correct and how it is fitting with the reward function
 - Working on the adjustment - encourage greater movements
 

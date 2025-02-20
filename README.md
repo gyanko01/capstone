@@ -412,6 +412,7 @@ futures added, and milestones acheived throughout the development process.
 - Adjustment is too small and have hard time getting as close to 1 as possible
 - Keep selecting actions is  # 5  and # 7
 - Reward function is not working as expected
+- Code issue - syntaxt error (need to adjust the spacing)
 - ### Successes of the week
 - Transitions are working better now- removed the 30day window steps
 - Debugged trian function , called in the reset method

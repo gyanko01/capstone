@@ -415,7 +415,7 @@ futures added, and milestones acheived throughout the development process.
 - Code issue - syntaxt error (need to adjust the spacing)
 - ### Successes of the week
 - Transitions are working better now- removed the 30day window steps
-- Debugged trian function , called in the reset method
+- Debugged train function , called in the reset method
 - Epsilon greedy action selection introduced condition state_visit_tracker [state] < 2 to encourage exploring and visiting more states of the dataset
 - Randomly moving through the dataset and selecting new states
 - Reward change with Rranking and Rgap excluding the -cost is more visible as better understanding that the improvement of new_current_ratio plus Rranking = 1 for least costly action or best investment action is encouraging agent to act as expected
@@ -431,13 +431,59 @@ futures added, and milestones acheived throughout the development process.
 
   ## Week 26: Week of Feb. 26 (Reward and Adjustment goals)
 - Fails of the week
+- Reward function is not workig as expected
+- The frequency of visited states is very unever (state ids in 300-400 have very low frequency)
+- The condition for adjsuting visiting states is not contributing more to even distribution of visiting the states
+- ### Successes of the week
+- Training log is provising good feedback on the learning performance 
+- ### Difficulties of the week
+- Struggling with reward shaping function and performance 
+- ### Goals for the next week
+- Flag states for human evaluator and incorporating the mechanism for human feedback
+- Incorporate conditions for current_ratio < 1 and current_ratio > 1 to have the reflection actions allowed and set a negative reward if not the right action selected
+  
+  ## Week 27: Week of March 5 (Adjsutment and reward)
+- Fails of the week
+- Adjsutment is too small when figuring out the next_current_ratio
+- The frequency of visited states is very unever (state ids in 300-400 have very low frequency)
+- The condition for adjsuting visiting states is not contributing more to even distribution of visiting the states
+- ### Successes of the week
+- Reward function is showing improvement successfully
+- ### Difficulties of the week
+- Calculating the next_current_ratio
+- ### Goals for the next week
+- Flag states for human evaluator and incorporating the mechanism for human feedback
+- Apply formula including the real market values for adjsutment improvement
+- Integrate human in the loop mechanism to collect human feedback
+
+  ## Week 28: Week of March 12 (Adjsutment and reward)
+- Fails of the week
+- Calculating next_ratio is not improving, adjusment is very small 
+- ### Successes of the week
+- Reward function is showing a good trend
+    - Start with negative and improves as it get close to episode 6000 and then it reaches value around 400 for total rewar
+    - Successfully sest up moving average plot with MA over 50 episodes
+  - Flag funciton in environment with conditions
+  - MongoDB set up to save all the flagged records for human evaluation
+  - Scalar adjsutment to the next_ratio_calculation is getting improvements on calculating next_ratio, the adjustments are more aligned with the market variables data
+  - For next ratio utlized liquidity cost calculation formula with the market variables 
+- ### Difficulties of the week
+- Some issues with connecting MongoDB string
+- Calculating next ratio by setting the scalar and base adjsutment in a way to show improvmeent to the current_ratio based on the available market variable and market conditions
+- ### Goals for the next week
+- Flag states for human evaluator and incorporating the mechanism for human feedback
+- Apply formula including the real market values for adjsutment improvement
+- Test different scalars to multiply the adjsutment to get better adjustment
+-  Set up dashboard for the human feedback
+
+  ## Week 29: Week of March 19 (Human Feedback )
+- Fails of the week
 
 - ### Successes of the week
 
 - ### Difficulties of the week
 
 - ### Goals for the next week
-- Flag states for human evaluator and incorporating the mechanism for human feedback 
 
 
 

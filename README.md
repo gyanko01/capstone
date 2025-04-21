@@ -478,12 +478,142 @@ futures added, and milestones acheived throughout the development process.
 
   ## Week 29: Week of March 19 (Human Feedback )
 - Fails of the week
+- Adjustment is still small for near solvency scenarios; still struggling to adjust the logic
 
 - ### Successes of the week
+- Selected critical conditions with severe liquidity and market conditions, wehre the agent is not trained to take actions  in this environment
+- and the human evalautor might provide a helpful solution
+- Included exp(gap) in the formula to apply to scalar in the adjsutment it shows a very slight improvment
+- Started creating the dashboard in streamlit - relatively easy to set up 
+
+- ### Difficulties of the week
+- Adjsutment formula - introduced exp(gap) and also clipping
+- Selecting a relative number of records for human evlaution 
+
+- ### Goals for the next week
+- Flag the states for human evlaution
+- Build the dashboard for human evaluation completely
+
+  ## Week 30: Week of March 26 (Human Feedback Dashboard )
+- Fails of the week
+- Dashboard filters are not working - for actions and flagged reasons
+- Too many states flagged for human evaluation ~1800 
+
+- ### Successes of the week
+- Base reward traini gover 50 episode moving average has a trend ( star negative and improves plateuing aroung 200-250 episode 6000) 
+
+- ### Difficulties of the week
+- Selecting records and cases for human evlaution and bulding the dashboard with the varios feedback selection options (radio) 
+
+- ### Goals for the next week
+- Lower count human flags for evlaution records 
+- Human evaluator dashboard
+- 
+ ## Week 31: Week of April 2 (Human Feedback Dashboard )
+- Fails of the week
+- Still included some actions with lower adjustment for human evaluation , not improvement even witht human feedback
+- This is considered more of reinforcer of the action not contributor reason as per how the human can influence the base model for better learning  
+
+- ### Successes of the week
+-  Lowered the count for human feedback evalaution -322 count
+-  Included Ambigouls cost decision too close to low cost action
+-  Ambiguous return decision same as above but for current_ratio > 1 and here one critical scenario is for inverse_yield there is only one option - Action 1( smallest portion )
+-  Critical Liquidity with inverse yield and high volatility
+-  Near optimal ratio with lowe adjustment
+-  Actions were selected at later episodes > 8000
+
+- ### Difficulties of the week
+- Identifying the feedback options for each flag reason
+- Visual pie chart labels are overflowing hard ot fix and selecting appropriate chart 
+
+- ### Goals for the next week
+- Dive deep in the human evaluation
+
+  ## Week 32: Week of April 9 (Human Feedback Dashboard )
+- Fails of the week
+- Human reward shaping and finding a way to le tthe agent learn the human suggested action
+- Human rewards are not improving significantly the base model reward 
+ 
+
+- ### Successes of the week
+-  Human feedback dashboard is complete with all 322 states evalauted by the human
+-  Human provided suggested action, comment free text and also reward
+-  Successfully saved to the MOndo DB
+-  Included Refresh download for easy refresh of reviewed states
+
+- ### Difficulties of the week
+- Evaluating some of the scenarios
+- For "Included Ambigouls cost decision too close to low cost action" agreed with the agent for > 90%
+- Most influencial human evaluator state is the critical liquidity - evalautor suggested to take not the low cost action but
+- transfer liquidity and monitor if needed additional funds in case of demand deposits to borrow the remaining - conculded
+- that is the edge case and hard to be maintained by the current base agent logic and algorithm
+- Another edge case is inverse yield in current_ratio > 1 space only action avaialble is 1
+- Random cases of human evalaution to shift policy ar enot consistent and the 322 evalautor inputs represent totoal unique state of 20 vs. 486 states
+- This represents sparce human feedback and hard to contribute
+- Hard to reinforce the human suggested actions especially for edge cases 
+
+- ### Goals for the next week
+- Human reward training, results , analytics, improvment
+
+   ## Week 33: Week of April 16 (Human Fine-tune training)
+- Fails of the week
+- Human reward shaping and finding a way to le tthe agent learn the human suggested action
+- Human rewards are not improving significantly the base model reward 
+ 
+- ### Successes of the week
+-  Human feedback dashboard is complete with all 322 states evalauted by the human
+-  Human provided suggested action, comment free text and also reward
+-  Successfully saved to the MOndo DB
+-  Included Refresh download for easy refresh of reviewed states
+
+- ### Difficulties of the week
+- Evaluating some of the scenarios
+- For "Included Ambigouls cost decision too close to low cost action" agreed with the agent for > 90%
+- Most influencial human evaluator state is the critical liquidity - evalautor suggested to take not the low cost action but
+- transfer liquidity and monitor if needed additional funds in case of demand deposits to borrow the remaining - conculded
+- that is the edge case and hard to be maintained by the current base agent logic and algorithm
+- Another edge case is inverse yield in current_ratio > 1 space only action avaialble is 1
+- Random cases of human evalaution to shift policy ar enot consistent and the 322 evalautor inputs represent totoal unique state of 20 vs. 486 states
+- This represents sparce human feedback and hard to contribute
+- Hard to reinforce the human suggested actions especially for edge cases 
+
+- ### Goals for the next week
+- Human reward training,testing, results , analytics, improvment
+  
+   ## Week 34: Week of April 23 (Human Fine-tune training/testing)
+- Fails of the week
+- Fine-tuning the human enhanced
+- Human reward shaping agent
+- Very similar to base model
+- Not improvement in learning the human suggested action
+- Test dataset is 15% includes 93 unique states vs. 322 records reviewed
+- Human feedback is not showing statistical significance that is impriving the base model
+
+
+- ### Successes of the week
+-  Human trainig is showing very similar tren and also after episode 6K slight impprovment
+-  Cumlative rewards human - base has a strong trend upward
+- DB connectivity is improved
+- Training/ Testing environment work
+- Edge case inverse liquidity showed stringer results -yield_inversion: 311 / 364 matched (0.85)- 85% learned to align with human recommendation
+- Test training Fine-tuned Policy - Total Reward: 986.28 vs Base Policy - Total Reward: 931.55
+- Action CD Sell and Repo has 0 distribution 
+
+- ### Difficulties of the week
+- Human reward shaping - use the human reward suggested for improvement
+- 5K records match in trainig with human feedback
+- 35K nonmatching cases where the agent suggested different action or no evaluation
+  
+
+- ### Goals for the next week
+- Analytics and results , continue to fine-tune and start the presentation 
+  
+ ## Week 35: Week of April 30 (Presentation Preparation, results, fine-tune)
+
+- ### Successes of the week
+
 
 - ### Difficulties of the week
 
 - ### Goals for the next week
-
-
-
+ 
